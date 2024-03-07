@@ -1,7 +1,7 @@
 # Devin Jayasinghe 
 # REA Group - Digital Analytics Specialist Technical Interview Task Report
 
-The purpose of this document is to go through the pre-interview tasks provided by REA Group.
+The purpose of this document is to provide answers and thoughts on the pre-interview tasks provided by REA Group.
 
 # Task 1
 **Approach:**
@@ -11,11 +11,13 @@ The purpose of this document is to go through the pre-interview tasks provided b
 1. **Identify Key Metrics:** 
    - Determine the key metrics to track for analytics such as page views, visits, session duration, bounce rate, conversion rate.
    - For personalisation teams, track user behavior like property searches, interactions with site features.
-   - Fire success event for user who completed search (event5 = performedSearch)
+   - Fire success event for user who completed search (event5 = performedSearch), grab keywork from query string parameter to an eVAR
    - Page Tracking based on URL (page name, site, site section, site sub-section)
 
-Example Data Structure:
+<img src="REA_Website_URL.png" width="800" height="800">
 
+
+Example Data Structure:
 
 
 ```python
@@ -45,10 +47,9 @@ Example Data Structure:
 
 
 5. **Campaign Tracking:**
-   - Implement custom campaign tracking URLs to trace traffic sources and campaign effectiveness.
    - Marketing teams need to make sure they are using specific campaign tracking codes. (Adobe Analytics ?cid=dis|amd|sel)
    - Marketing teams can use the excel marketing campaign code generator.
-   - We need to make sure the campaign query string parameter is captured (Adobe Analytics = tracking code)
+   - We need to make sure the campaign query string parameter is captured (Adobe Analytics = tracking code), also capture in seperate eVAR as well.
    - Create set of Adobe Analytics classification rules to decipher the tracking code.
    - This would facilitate answering if a user came from email and then performed a conversion event such as completing a search.  
 
@@ -65,6 +66,8 @@ Here's a simplified visual representation of the workflow:
 <img src="QA_Workflow2.png" width="400" height="400">
 
 # Task 3
+
+<img src="Property_Website_URL.png" width="800" height="800">
 
 Example Data Structure:
 
